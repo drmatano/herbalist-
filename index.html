@@ -1,69 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Matano Herbal Clinic</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Powerful Herbalist| Spiritual Healer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Dr.Matano The Powerful Herbalist In Kenya</h1>
-    <p>Natural Healing • Herbal Prescriptions • Trusted Expertise</p>
-  </header>
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Dr.Matano Herbalist</h1>
+      <p>Natural Healing • Herbal Prescriptions • Trusted Expertise</p>
+      <a href="#contact" class="btn-primary">Book Consultation</a>
+    </div>
+  </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section class="card">
     <h2>About Matano</h2>
     <p>
-      Matano is a highly skilled herbal expert based in Parklands, Nairobi, Kenya.  
-      With years of experience in traditional and natural medicine, he provides safe 
-      and effective herbal prescriptions tailored to each client’s health needs.
-    </p>
-    <p>
-      His mission is simple: <strong>Heal the body naturally and restore wellness.</strong>
+      Based in Parklands, Nairobi, Kenya, <strong>Dr.Matano</strong> is a highly trained herbal expert 
+      specializing in natural medicine, traditional healing, and personalized remedies tailored to
+      each client's needs.
     </p>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Grid -->
   <section class="card">
-    <h2>Herbal Services</h2>
-    <ul>
-      <li>Personalized herbal prescriptions</li>
-      <li>Treatment for chronic illnesses</li>
-      <li>Detox & cleansing herbal programs</li>
-      <li>Male and female reproductive health</li>
-      <li>Immune system boosting remedies</li>
-      <li>Herbal skincare & body treatment</li>
-      <li>Stress, fatigue & energy balance formulas</li>
-    </ul>
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service">Powerful love spell</div>
+      <div class="service">Detox & Cleansing spell</div>
+      <div class="service">Manpower Enhancement spell</div>
+      <div class="service">Female And Male Fertility </div>
+      <div class="service">Win Court Cases</div>
+      <div class="service">Bring Back Lost Lover</div>
+      <div class="service">Property Protection</div>
+      <div class="service">Magic Rings</div>
+    </div>
   </section>
 
-  <!-- Why Choose Section -->
+  <!-- Photo Gallery -->
   <section class="card">
-    <h2>Why Choose Matano?</h2>
-    <p>✔ Experienced herbal practitioner</p>
-    <p>✔ 100% natural remedies</p>
-    <p>✔ Safe, non-toxic treatments</p>
-    <p>✔ Personalized follow-ups and guidance</p>
-    <p>✔ Trusted by clients across Kenya and East Africa</p>
+    <h2>Photo Gallery</h2>
+    <p>Herbal products</p>
+
+    <div class="gallery">
+      <!-- Replace images later -->
+      <img src="images/img1.jpg" alt="Herbal Product 1">
+      <img src="images/img2.jpg" alt="Herbal Product 2">
+      <img src="images/img3.jpg" alt="Herbal Product 3">
+      <img src="images/img4.jpg" alt="Herbal Product 4">
+      <img src="images/img5.jpg" alt="Herbal Product 5">
+      <img src="images/img6.jpg" alt="Herbal Product 6">
+    </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Modal Popup -->
+  <div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- Payments -->
   <section class="card">
+    <h2>Payment Options</h2>
+    <p>Convenient and secure payment methods for all clients.</p>
+
+    <div class="payment-grid">
+      <a class="pay-btn mpesa">Pay with M-Pesa</a>
+      <a class="pay-btn airtel">Airtel Money</a>
+      <a class="pay-btn mtn">MTN Mobile Money</a>
+      <a class="pay-btn cod">Pay on Delivery</a>
+    </div>
+
+    <p class="payment-note">
+      After payment, kindly send a confirmation message on WhatsApp.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="card">
     <h2>Contact Matano</h2>
-    <p>📍 Location: Parklands, Nairobi, Kenya</p>
+    <p>📍 <strong>Parklands, Nairobi, Kenya</strong></p>
     <p>📞 Phone / WhatsApp: <strong>+254 799 963 80</strong></p>
-    <p>For consultations and prescriptions, reach out directly via phone or WhatsApp.</p>
   </section>
 
-  <!-- Footer -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/25479996380" class="whatsapp-btn" target="_blank">
+    Chat on WhatsApp
+  </a>
+
   <footer>
-    <p>© 2025 Matano Herbal Clinic • Natural Healing for a Better Life</p>
+    <p>© 2025 Powerful Herbalist— Dr.Matano</p>
   </footer>
 
+  <script src="scripts.js"></script>
 </body>
-      </html>
+  </html>
