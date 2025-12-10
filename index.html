@@ -42,20 +42,26 @@
     </div>
   </section>
 
-  <!-- Photo Gallery -->
-  <section class="card">
-    <h2>Photo Gallery</h2>
-    <p>Herbal products</p>
+  <!-- Image Gallery Section Start -->
+<section id="gallery" style="padding:50px 20px; background-color:#f9f9f9; text-align:center;">
+  <h2 style="margin-bottom:30px;">Gallery</h2>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; justify-items:center;">
 
-    <div class="gallery">
-      <!-- Replace images later -->
-      <img src="images/img1.jpg" alt="Herbal Product 1">
-      <img src="images/img2.jpg" alt="Herbal Product 2">
-      <img src="images/img3.jpg" alt="Herbal Product 3">
-      <img src="images/img4.jpg" alt="Herbal Product 4">
-      <img src="images/img5.jpg" alt="Herbal Product 5">
-      <img src="images/img6.jpg" alt="Herbal Product 6">
+    <!-- Image 1 -->
+    <div style="overflow:hidden; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
+      <img src="images/img1.jpg" alt="Image 1" style="width:100%; height:auto; display:block; transition: transform 0.3s;">
     </div>
+
+    <!-- You can add more images by copying this block -->
+  </div>
+</section>
+<!-- Image Gallery Section End -->
+
+<style>
+  #gallery img:hover {
+    transform: scale(1.05);
+  }
+</style>
   </section>
 
   <!-- Modal Popup -->
