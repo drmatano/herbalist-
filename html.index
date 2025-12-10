@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Matano - Powerful Traditional Herbalist & Spiritual Healer in Parklands, Nairobi. Specializing in spiritual healing, love spells, fertility, and traditional remedies.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Matano | Powerful Traditional Herbalist & Spiritual Healer">
+    <meta property="og:description" content="Restoring harmony between mind, body, and spirit through ancestral wisdom in Parklands, Nairobi">
+    <meta property="og:image" content="images/img10.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Matano Herbalist">
+    <meta name="twitter:description" content="Spiritual Healing • Herbalist • Trusted Expertise in Nairobi">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Dr. Matano Traditional Herbalist & Spiritual Healer",
+        "description": "Powerful traditional herbalist specializing in spiritual healing, love spells, fertility, and ancestral remedies",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Parklands",
+            "addressRegion": "Nairobi",
+            "addressCountry": "Kenya"
+        },
+        "telephone": "+254799936380",
+        "image": "images/img10.jpg",
+        "priceRange": "KES",
+        "areaServed": "Nairobi and Worldwide Consultations",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Spiritual Healing Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Powerful Love Spell"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Detox & Cleansing Spell"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <title>Dr. Matano | Powerful Traditional Herbalist & Spiritual Healer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+</head>
+<body>
+    <!-- Skip to Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home" class="logo__link">
+                    <span class="logo__icon">🌿</span>
+                    <span class="logo__text">
+                        <span class="logo__title">Dr. Matano</span>
+                        <span class="logo__subtitle">Traditional Herbalist & Spiritual Healer</span>
+                    </span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__overlay"></div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <img src="images/img10.jpg" class="hero__logo" alt="Dr. Matano - Traditional Herbalist">
+                    <h1 class="hero__title">Dr. Matano Traditional Herbalist</h1>
+                    <p class="hero__subtitle">Spiritual Healing • Herbalist • Trusted Expertise</p>
+                    <p class="hero__description">Restoring harmony between mind, body, and spirit through ancestral wisdom and traditional healing practices in Parklands, Nairobi.</p>
+                    <div class="hero__cta">
+                        <a href="#services" class="btn btn--primary pulse-animation">
+                            <span class="btn__icon"><i class="fas fa-leaf"></i></span>
+                            <span class="btn__text">Explore Healing Services</span>
+                        </a>
+                        <a href="https://wa.me/254799936380" class="btn btn--secondary" target="_blank">
+                            <span class="btn__icon"><i class="fab fa-whatsapp"></i></span>
+                            <span class="btn__text">Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-indicator">
+                        <span class="trust-indicator__number">15+</span>
+                        <span class="trust-indicator__text">Years Experience</span>
+                    </div>
+                    <div class="trust-indicator">
+                        <span class="trust-indicator__number">Confidential</span>
+                        <span class="trust-indicator__text">Private Consultations</span>
+                    </div>
+                    <div class="trust-indicator">
+                        <span class="trust-indicator__number">100%</span>
+                        <span class="trust-indicator__text">Traditional Methods</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Dr. Matano Powerful Traditional Herbalist</h2>
+                    <p class="section__subtitle">Based in Parklands, Nairobi, Kenya</p>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <div class="card card--glass">
+                            <h3 class="card__title">Ancestral Wisdom for Modern Healing</h3>
+                            <p><strong>Dr. Matano</strong> is a highly trained herbal expert specializing in spiritual healing, traditional healing, and personalized remedies tailored to each client's needs.</p>
+                            
+                            <p>True healing comes from reconnecting with ancestral wisdom and the spiritual beings of life. Dr. Matano's approach restores harmony between mind, body, and spirit through time-honored cultural practices.</p>
+                            
+                            <div class="about__principles">
+                                <div class="principle">
+                                    <div class="principle__icon">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                    </div>
+                                    <div class="principle__content">
+                                        <h4 class="principle__title">Confidential & Ethical</h4>
+                                        <p class="principle__description">All consultations are private and conducted with utmost respect and professionalism.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="principle">
+                                    <div class="principle__icon">
+                                        <i class="fas fa-seedling"></i>
+                                    </div>
+                                    <div class="principle__content">
+                                        <h4 class="principle__title">Traditional Methods</h4>
+                                        <p class="principle__description">Using authentic ancestral knowledge and natural remedies passed down through generations.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="principle">
+                                    <div class="principle__icon">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                    <div class="principle__content">
+                                        <h4 class="principle__title">Holistic Approach</h4>
+                                        <p class="principle__description">Addressing spiritual, emotional, and physical aspects for complete transformation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <blockquote class="about__quote">
+                                <p>"My practice complements necessary medical care while focusing on spiritual and traditional healing that modern medicine often overlooks."</p>
+                                <cite>- Dr. Matano, Traditional Herbalist</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="about__image">
+                        <div class="image-frame">
+                            <img src="images/img10.jpg" 
+                                 alt="Dr. Matano - Traditional Herbalist in Parklands, Nairobi" 
+                                 loading="lazy"
+                                 class="image-frame__img">
+                            <div class="image-frame__decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Spiritual Healing Services</h2>
+                    <p class="section__subtitle">Personalized solutions for life's challenges</p>
+                </div>
+                
+                <div class="services__grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="service-card__title">Powerful Love Spell</h3>
+                            <div class="service-card__price">Consultation</div>
+                        </div>
+                        
+                        <div class="service-card__body">
+                            <p class="service-card__description">Restore and strengthen romantic relationships through traditional spiritual methods.</p>
+                            
+                            <ul class="service-card__benefits">
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Attract true love</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Strengthen existing relationships</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Resolve relationship conflicts</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Remove love obstacles</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-card__footer">
+                            <a href="https://wa.me/254799936380?text=Hi%20Dr.%20Matano,%20I'm%20interested%20in%20Love%20Spell%20services" 
+                               class="btn btn--secondary service-card__btn" 
+                               target="_blank">
+                                <span class="btn__icon"><i class="fab fa-whatsapp"></i></span>
+                                <span class="btn__text">Book Consultation</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <h3 class="service-card__title">Detox & Cleansing Spell</h3>
+                            <div class="service-card__price">Consultation</div>
+                        </div>
+                        
+                        <div class="service-card__body">
+                            <p class="service-card__description">Spiritual cleansing to remove negative energies and restore positive energy flow.</p>
+                            
+                            <ul class="service-card__benefits">
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Remove negative energies</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Spiritual detoxification</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Restore positive energy</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Protection from evil eyes</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-card__footer">
+                            <a href="https://wa.me/254799936380?text=Hi%20Dr.%20Matano,%20I'm%20interested%20in%20Detox%20%26%20Cleansing%20services" 
+                               class="btn btn--secondary service-card__btn" 
+                               target="_blank">
+                                <span class="btn__icon"><i class="fab fa-whatsapp"></i></span>
+                                <span class="btn__text">Book Consultation</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 3 -->
+                    <article class="service-card service-card--featured">
+                        <div class="service-card__badge">Most Popular</div>
+                        <div class="service-card__header">
+                            <div class="service-card__icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3 class="service-card__title">Complete Protection Package</h3>
+                            <div class="service-card__price">Full Service</div>
+                        </div>
+                        
+                        <div class="service-card__body">
+                            <p class="service-card__description">Comprehensive spiritual protection for property, business, and personal life.</p>
+                            
+                            <ul class="service-card__benefits">
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Property protection spells</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Business protection</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Personal spiritual shield</span>
+                                </li>
+                                <li class="benefit">
+                                    <i class="fas fa-check benefit__icon"></i>
+                                    <span class="benefit__text">Magic rings & amulets</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-card__footer">
+                            <a href="https://wa.me/254799936380?text=Hi%20Dr.%20Matano,%20I'm%20interested%20in%20Complete%20Protection%20Package" 
+                               class="btn btn--primary service-card__btn" 
+                               target="_blank">
+                                <span class="btn__icon"><i class="fab fa-whatsapp"></i></span>
+                                <span class="btn__text">Book Now</span>
+                            </a>
+                        </div>
+        
