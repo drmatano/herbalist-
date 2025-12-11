@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Dr Matano</title>
+  <meta name="description" content="Herbal consultations, product offerings and workshops offered by Dr Matano." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <span class="brand-text">Dr Matano<span class="muted"> — The Herbalist</span></span>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Services</h1>
+
+    <section class="service">
+      <h2>One-on-One Consultations</h2>
+      <p>Comprehensive intake, treatment plan, herb recommendations and follow-up. Remote or in-person available.</p>
+      <ul>
+        <li>Initial 75-minute intake</li>
+        <li>30–45 minute follow-ups</li>
+        <li>Herb safety & interactions review</li>
+      </ul>
+    </section>
+
+    <section class="service">
+      <h2>Herbal Formulations</h2>
+      <p>Small-batch tinctures and teas made to order. Safety labeling and contraindication notes included.</p>
+    </section>
+
+    <section class="service">
+      <h2>Workshops & Teaching</h2>
+      <p>Beginner to intermediate classes on identification, preparations and safe at-home practices.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year-services"></span> Dr Matano</div></footer>
+
+  <script>document.getElementById('year-services').textContent = new Date().getFullYear();</script>
+</body>
+  </html>
