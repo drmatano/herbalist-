@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr Matano — The Herbalist</title>
+  <meta name="description" content="Dr Matano — The Herbalist. Herbal remedies, consultations, classes and sustainably-sourced herbs to support your wellbeing." />
+  <meta name="theme-color" content="#2e7d32" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dr Matano — The Herbalist" />
+  <meta property="og:description" content="Herbal remedies, consultations, classes and sustainably-sourced herbs to support your wellbeing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-hero.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr Matano — The Herbalist" />
+  <meta name="twitter:description" content="Herbal remedies, consultations, classes and sustainably-sourced herbs to support your wellbeing." />
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Dr Matano — The Herbalist logo" class="logo" />
+        <span class="brand-text">Dr Matano<span class="muted"> — The Herbalist</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Herbal care rooted in science and tradition</h1>
+        <p class="tagline">Personalized herbal consultations, ethically-sourced formulas, and education to help you flourish.</p>
+        <p class="hero-cta">
+          <a href="services.html" class="btn">Our Services</a>
+          <a href="contact.html" class="btn btn-outline">Book a Consultation</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="intro container" id="intro">
+      <h2>Welcome</h2>
+      <p>I'm Dr Matano, a clinical herbalist and educator. I combine evidence-informed herbal medicine with a person-centered approach to help you meet your health goals.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Consultations</h3>
+          <p>One-on-one herbal consultations and tailored care plans for acute and chronic concerns.</p>
+        </article>
+        <article class="card">
+          <h3>Herbal Formulas</h3>
+          <p>Small-batch, sustainably-sourced remedies prepared to high safety standards.</p>
+        </article>
+        <article class="card">
+          <h3>Workshops</h3>
+          <p>Hands-on classes and online courses about plant identification, herbal safety and DIY remedies.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured container" id="featured">
+      <h2>Latest from the blog</h2>
+      <div class="grid">
+        <article class="post">
+          <img src="images/post1.jpg" alt="Herbal tea cup" />
+          <h3><a href="blog.html#post1">Herbal teas for everyday calm</a></h3>
+          <p>A short guide to calm-promoting herbs and how to prepare calming teas safely.</p>
+        </article>
+        <article class="post">
+          <img src="images/post2.jpg" alt="Dried herbs" />
+          <h3><a href="blog.html#post2">Sourcing herbs ethically</a></h3>
+          <p>How to choose ethically-harvested herbs and what sustainability certifications mean.</p>
+        </article>
+        <article class="post">
+          <img src="images/post3.jpg" alt="Workshop group" />
+          <h3><a href="blog.html#post3">Upcoming: Spring tonic workshop</a></h3>
+          <p>Join our seasonal workshop to learn about tonic herbs for renewal and resilience.</p>
+        </article>
+      </div>
+      <p class="align-center"><a href="blog.html" class="btn btn-outline">See all posts</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Dr Matano — The Herbalist</h4>
+        <p>Herbal consultations, education and sustainably-sourced products.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:hello@drmatano.com">hello@drmatano.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <p><a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">© <span id="year"></span> Dr Matano. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+  <!-- Structured data (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dr Matano — The Herbalist",
+    "url": "https://drmatano.com",
+    "logo": "https://drmatano.com/images/logo.svg",
+    "sameAs": [
+      "https://www.instagram.com/yourprofile",
+      "https://www.facebook.com/yourpage"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "hello@drmatano.com",
+      "contactType": "customer support"
+    }]
+  }
+  </script>
+</body>
+    </html>
