@@ -1,117 +1,104 @@
-/* Styles for Dr Matano — The Herbalist
-   Simple, responsive, accessible. Customize colors and fonts as needed.
-*/
-
-:root{
-  --brand: #2e7d32;
-  --brand-600: #276b2a;
-  --muted: #6b6b6b;
-  --bg: #ffffff;
-  --card-bg: #fbfbfb;
-  --max-width: 1100px;
-  --gap: 1.25rem;
-  --radius: 8px;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+/* Spiritual theme updates */
+:root {
+  --spiritual-purple: #4a148c;
+  --ritual-gold: #ffd700;
+  --earth-brown: #8d6e63;
+  --cleansing-blue: #1565c0;
 }
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family:var(--font-sans);
-  color:#222;
-  background:var(--bg);
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
+/* Spiritual services section */
+.spiritual-services {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e8f5e9 100%);
+  padding: 4rem 0;
+  margin: 3rem 0;
 }
 
-.container{
-  width:calc(100% - 2rem);
-  max-width:var(--max-width);
-  margin:0 auto;
-  padding:2rem 1rem;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-/* Header */
-.site-header{
-  background:#fff;
-  border-bottom:1px solid #eee;
-  position:sticky;
-  top:0;
-  z-index:40;
-}
-.header-inner{
-  display:flex;
-  align-items:center;
-  gap:var(--gap);
-  justify-content:space-between;
-}
-.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:inherit}
-.logo{height:44px;width:44px}
-.brand-text{font-weight:700}
-.muted{color:var(--muted);font-weight:400;font-size:.95rem}
-
-.site-nav ul{
-  list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center;
-}
-.site-nav a{color:inherit;text-decoration:none;padding:.6rem .5rem;border-radius:6px}
-.site-nav a:hover,.site-nav a:focus{background:#f2f7f2}
-.cta{background:var(--brand);color:#fff;padding:.5rem .8rem;border-radius:6px}
-
-/* Mobile nav toggle */
-.nav-toggle{
-  display:none;
-  background:none;border:0;padding:.3rem;
-}
-.hamburger{
-  display:block;width:26px;height:2px;background:#333;position:relative;
-}
-.hamburger::after,.hamburger::before{content:"";position:absolute;left:0;width:26px;height:2px;background:#333}
-.hamburger::before{top:-8px}
-.hamburger::after{bottom:-8px}
-
-/* Hero */
-.hero{
-  background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)), url("../images/hero.jpg");
-  background-size:cover;
-  background-position:center;
-  color:#fff;padding:6rem 0;
-}
-.hero-inner{max-width:900px}
-.hero h1{font-size:2.25rem;margin:0 0 .5rem}
-.tagline{opacity:.95;margin-bottom:1.25rem}
-.btn{display:inline-block;background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
-.btn-outline{background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff}
-
-/* Cards & grid */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.25rem}
-.card{background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.post img{width:100%;height:160px;object-fit:cover;border-radius:6px}
-
-/* Content */
-h1,h2,h3{color:var(--brand-600)}
-p{margin:.6rem 0}
-
-/* Footer */
-.site-footer{background:#fafafa;border-top:1px solid #eee;padding:2rem 0;margin-top:2rem}
-.footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
-.footer-col h4{margin:.2rem 0}
-.copyright{background:#fff;border-top:1px solid #f1f1f1;padding:.75rem 0;margin-top:1rem;text-align:center;font-size:.9rem;color:var(--muted)}
-
-/* Contact form */
-.contact-form{max-width:700px}
-.contact-form label{display:block;margin:.6rem 0 .3rem}
-.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px}
-.contact-form .form-note{margin-top:.6rem;color:var(--muted)}
-
-/* Responsive */
-@media (max-width: 900px){
-  .footer-inner{grid-template-columns:1fr; text-align:left}
-  .nav-toggle{display:inline-block}
-  .site-nav{position:absolute;top:64px;right:1rem;background:#fff;border:1px solid #eee;padding:1rem;border-radius:8px;display:none}
-  .site-nav.open{display:block}
-  .hero{padding:4rem 0}
+.service-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--spiritual-purple);
 }
 
-.align-center{text-align:center}
+.service-item h3 {
+  color: var(--spiritual-purple);
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial:before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--spiritual-purple);
+  opacity: 0.2;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--spiritual-purple);
+}
+
+/* Disclaimer */
+.disclaimer-box {
+  background: #fff8e1;
+  border: 2px solid #ffd54f;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.disclaimer-box h3 {
+  color: #e65100;
+  margin-bottom: 1rem;
+}
+
+/* Card icons */
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+                                                 }
