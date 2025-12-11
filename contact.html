@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Dr Matano</title>
+  <meta name="description" content="Contact Dr Matano for consultations, workshops or media enquiries." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <span class="brand-text">Dr Matano<span class="muted"> — The Herbalist</span></span>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" aria-current="page" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>If you'd like to book a consultation or ask about workshops and products, use the form below or email <a href="mailto:hello@drmatano.com">hello@drmatano.com</a>.</p>
+
+    <!-- Example contact form using Formspree (replace ACTION with your form endpoint) -->
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send message</button>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year-contact"></span> Dr Matano</div></footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.getElementById('year-contact').textContent = new Date().getFullYear();
+
+    // Minimal progressive enhancement for the contact form
+    (function () {
+      var form = document.getElementById('contactForm');
+      var note = document.getElementById('formNote');
+
+      form.addEventListener('submit', function (e) {
+        // Let the HTML5 validation run first
+        if (!form.checkValidity()) {
+          note.textContent = 'Please complete the highlighted fields.';
+          return;
+        }
+        note.textContent = 'Sending…';
+        // If using a third-party endpoint like Formspree, the POST will take care of submission.
+        // For a JS fetch-based submission, implement here (requires a server or API).
+      });
+    })();
+  </script>
+</body>
+                                                                                                                                                                          </html>
