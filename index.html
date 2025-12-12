@@ -66,9 +66,9 @@
             text-decoration: none;
         }
         
-        .logo-icon {
-            font-size: 2rem;
-            color: var(--secondary-color);
+        .logo-img {
+            height: 50px;
+            width: auto;
         }
         
         .logo-text {
@@ -442,6 +442,10 @@
             .section-title {
                 font-size: 1.9rem;
             }
+            
+            .logo-img {
+                height: 40px; /* Smaller logo on mobile */
+            }
         }
         
         @media (max-width: 576px) {
@@ -465,6 +469,10 @@
             .phone-number {
                 font-size: 1.5rem;
             }
+            
+            .logo-img {
+                height: 35px; /* Even smaller on very small screens */
+            }
         }
     </style>
 </head>
@@ -473,9 +481,7 @@
     <header>
         <div class="container header-container">
             <a href="#home" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
+                <img src="./images/img10.jpg" alt="Doctor Matano Logo" class="logo-img">
                 <div class="logo-text">Doctor <span>Matano</span></div>
             </a>
             
@@ -618,8 +624,4 @@
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Doctor Matano</h2>
-            <p style="font-size: 1.2rem; max-w
+    <!-- ===== CONTACT 
