@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Matano - Traditional Healer & Spiritual Guide</title>
+    <title>Doctor Matano - Traditional Healer & Spiritual Guide | 100% Guaranteed Results</title>
+    <meta name="description" content="Doctor Matano: Trusted traditional healer with 40+ years experience. Spiritual healing, traditional medicine, ancestral wisdom. 100% guaranteed results within 12 hours.">
+    <meta name="keywords" content="traditional healer, spiritual healing, African medicine, ancestral wisdom, Doctor Matano, herbal medicine, love spells, court cases, infertility solutions">
+    <meta name="author" content="Doctor Matano">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Professional Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* ===== RESET & BASE STYLES ===== */
+        /* ===== ENHANCED RESET & BASE STYLES ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         :root {
-            --primary-color: #2c5e1a;
-            --secondary-color: #d4a017;
+            --primary-color: #1a472a;
+            --secondary-color: #d4af37;
             --accent-color: #8b4513;
-            --light-color: #f5f3e7;
-            --dark-color: #1a1a1a;
+            --light-color: #f8f5f0;
+            --dark-color: #2c2c2c;
             --text-color: #333;
+            --success-color: #27ae60;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         body {
-            background-color: #f9f7f0;
+            background-color: var(--light-color);
             color: var(--text-color);
-            line-height: 1.6;
-            padding-top: 70px; /* Space for fixed header */
+            line-height: 1.7;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
         }
         
         html {
@@ -38,19 +52,25 @@
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 20px;
         }
         
-        /* ===== NAVIGATION ===== */
+        /* ===== ENHANCED NAVIGATION ===== */
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3e 100%);
             color: white;
-            padding: 1rem 0;
+            padding: 1.2rem 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            padding: 0.8rem 0;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         }
         
         .header-container {
@@ -62,29 +82,47 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: translateY(-2px);
         }
         
         .logo-img {
-            height: 50px;
+            height: 55px;
             width: auto;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+            padding: 3px;
+            background: white;
         }
         
         .logo-text {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: white;
+            letter-spacing: 0.5px;
         }
         
         .logo-text span {
             color: var(--secondary-color);
+            font-weight: 800;
+        }
+        
+        .logo-tagline {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 2px;
+            font-style: italic;
         }
         
         nav ul {
             display: flex;
             list-style: none;
-            gap: 1.5rem;
+            gap: 2rem;
             align-items: center;
         }
         
@@ -92,7 +130,25 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: width 0.3s;
+        }
+        
+        nav a:hover:after,
+        nav a.active:after {
+            width: 100%;
         }
         
         nav a:hover {
@@ -106,178 +162,377 @@
             color: white;
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 5px;
         }
         
         .cta-button {
             display: inline-block;
-            background-color: var(--secondary-color);
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #e8c64a 100%);
             color: var(--dark-color);
-            padding: 0.5rem 1.5rem;
+            padding: 0.6rem 1.8rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s;
+            border-radius: 30px;
+            transition: var(--transition);
             border: none;
             cursor: pointer;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            letter-spacing: 0.5px;
         }
         
         .cta-button:hover {
-            background-color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #e8c64a 0%, var(--secondary-color) 100%);
         }
         
-        /* ===== SECTION COMMON STYLES ===== */
+        /* ===== ENHANCED SECTIONS ===== */
         section {
-            padding: 5rem 0;
+            padding: 6rem 0;
+            position: relative;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
             color: var(--primary-color);
-            font-size: 2.2rem;
+            font-size: 2.8rem;
             position: relative;
         }
         
-        .section-title::after {
+        .section-title:after {
             content: '';
             display: block;
-            width: 80px;
-            height: 3px;
-            background-color: var(--secondary-color);
-            margin: 10px auto;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            margin: 15px auto;
+            border-radius: 2px;
         }
         
-        /* ===== HOME/HERO SECTION ===== */
+        .section-subtitle {
+            text-align: center;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: -2rem auto 3rem;
+            font-style: italic;
+        }
+        
+        /* ===== ENHANCED HERO SECTION ===== */
         #home {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url('./images/hero.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
             text-align: center;
-            padding: 8rem 0;
-            margin-top: -70px; /* Counteract header padding */
+            padding: 10rem 0;
+            margin-top: -80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #home:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(transparent, var(--light-color));
         }
         
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.8rem;
             margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-tagline {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-weight: 500;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            opacity: 0;
         }
         
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             max-width: 800px;
-            margin: 0 auto 2.5rem;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            opacity: 0;
         }
         
-        /* ===== SERVICES SECTION ===== */
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            margin: 2rem auto;
+            animation: fadeInUp 1s ease 0.6s forwards;
+            opacity: 0;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 5px;
+        }
+        
+        /* ===== ENHANCED SERVICES SECTION ===== */
         #services {
             background-color: white;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
         }
         
         .service-card {
-            background-color: var(--light-color);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
             text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
-        .service-card i {
-            font-size: 2.5rem;
+        .service-icon {
+            font-size: 3.5rem;
             color: var(--primary-color);
             margin-bottom: 1.5rem;
+            display: inline-block;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+            color: var(--secondary-color);
         }
         
         .service-card h3 {
             color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
         }
         
-        /* ===== ABOUT SECTION ===== */
+        .service-features {
+            list-style: none;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .service-features li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        
+        .service-duration {
+            display: inline-block;
+            background: var(--light-color);
+            color: var(--accent-color);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        /* ===== ENHANCED ABOUT SECTION ===== */
         #about {
-            background-color: #f0ede0;
+            background: linear-gradient(135deg, #f0ede0 0%, #e8e2d0 100%);
+            position: relative;
         }
         
         .about-content {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
             align-items: center;
-            gap: 3rem;
         }
         
         .about-text {
-            flex: 1;
+            position: relative;
         }
         
         .about-image {
-            flex: 1;
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+            position: relative;
         }
         
         .about-image img {
             width: 100%;
             height: auto;
             display: block;
+            transition: var(--transition);
         }
         
-        .about-grid {
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .experience-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+        
+        .experience-years {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--secondary-color);
+        }
+        
+        .experience-text {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        /* ===== NEW PROCESS SECTION ===== */
+        #process {
+            background: white;
+        }
+        
+        .process-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
+            margin-top: 3rem;
         }
         
-        .about-card {
-            background-color: white;
+        .process-step {
+            text-align: center;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
         }
         
-        .about-card i {
-            font-size: 2.5rem;
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .process-step h3 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
         
-        .about-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        /* ===== TESTIMONIALS SECTION ===== */
+        /* ===== ENHANCED TESTIMONIALS SECTION ===== */
         #testimonials {
-            background-color: white;
+            background: linear-gradient(135deg, var(--light-color) 0%, #e8e2d0 100%);
         }
         
         .testimonial-slider {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             position: relative;
         }
         
         .testimonial {
-            background-color: var(--light-color);
-            padding: 2.5rem;
-            border-radius: 10px;
-            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
             display: none;
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 5rem;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
         }
         
         .testimonial.active {
@@ -285,343 +540,169 @@
             animation: fadeIn 0.8s;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
         .testimonial-text {
             font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
         }
         
         .testimonial-author {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-        
-        .slider-controls {
             display: flex;
-            justify-content: center;
+            align-items: center;
             gap: 1rem;
-            margin-top: 2rem;
         }
         
-        .slider-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            width: 45px;
-            height: 45px;
+        .author-avatar {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            cursor: pointer;
+            background: var(--light-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s;
+            font-size: 1.5rem;
+            color: var(--primary-color);
         }
         
-        .slider-btn:hover {
-            background-color: var(--secondary-color);
-            color: var(--dark-color);
+        .author-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
         }
         
-        /* ===== CONTACT SECTION ===== */
+        .author-location {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-rating {
+            color: var(--secondary-color);
+            margin-top: 0.5rem;
+        }
+        
+        /* ===== NEW FAQ SECTION ===== */
+        #faq {
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: var(--light-color);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        /* ===== ENHANCED CONTACT SECTION ===== */
         #contact {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3e 100%);
             color: white;
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: cover;
         }
         
         #contact .section-title {
             color: white;
         }
         
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+        
         .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
         }
         
         .contact-item {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
         
         .contact-item i {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: var(--secondary-color);
+            min-width: 40px;
+        }
+        
+        .contact-details h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
         }
         
         .phone-number {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 700;
             color: var(--secondary-color);
+            display: block;
+            margin: 0.5rem 0;
+            transition: var(--transition);
         }
         
-        /* ===== FOOTER ===== */
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
+        .phone-number:hover {
+            transform: scale(1.05);
         }
         
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: var(--secondary-color);
-        }
-        
-        /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .about-image {
-                order: -1;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                position: fixed;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background-color: var(--primary-color);
-                flex-direction: column;
-                padding: 1.5rem 0;
-                text-align: center;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title {
-                font-size: 1.9rem;
-            }
-            
-            .logo-img {
-                height: 40px; /* Smaller logo on mobile */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            #home {
-                padding: 6rem 0;
-            }
-            
-            section {
-                padding: 4rem 0;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 2rem;
-            }
-            
-            .phone-number {
-                font-size: 1.5rem;
-            }
-            
-            .logo-img {
-                height: 35px; /* Even smaller on very small screens */
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- ===== NAVIGATION HEADER ===== -->
-    <header>
-        <div class="container header-container">
-            <a href="#home" class="logo">
-                <img src="./images/img10.jpg" alt="Doctor Matano Logo" class="logo-img">
-                <div class="logo-text">Doctor <span>Matano</span></div>
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="cta-button">Call Now</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- ===== HOME/HERO SECTION ===== -->
-    <section id="home">
-        <div class="container">
-            <div class="hero">
-                <h1>Traditional Doctor Matano</h1>
-                <p>Ready to serve you with diligence and experience. With medicine from Africa and overseas, I provide solutions that work instantly within 12 hours with 100% guarantee.</p>
-                <a href="#contact" class="cta-button" style="padding: 0.8rem 2.5rem; font-size: 1.1rem;">Get Help Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SERVICES SECTION ===== -->
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">How I Can Help You</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Love & Relationships</h3>
-                    <p>Restore lost love, strengthen marriages, attract compatible partners, and heal emotional wounds with traditional spiritual methods.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Financial Success</h3>
-                    <p>Business growth, job promotions, debt clearance, and prosperity spells to open pathways to abundance and financial stability.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-gavel"></i>
-                    <h3>Legal Protection</h3>
-                    <p>Court case victory, protection from enemies, witchcraft reversal, and spiritual shields against negative energies and curses.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Health & Wellness</h3>
-                    <p>Infertility solutions, chronic illness management, traditional herbal medicine, and spiritual healing for physical ailments.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-home"></i>
-                    <h3>Family Harmony</h3>
-                    <p>Resolve family conflicts, ancestral issues, domestic peace restoration, and remove negative energies from your home.</p>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Spiritual Cleansing</h3>
-                    <p>Remove negative energy, curses, spiritual blockages, and ancestral problems with traditional cleansing rituals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Doctor Matano</h2>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>In a world of constant noise and distraction, true healing comes from reconnecting with ancestral wisdom and the spiritual beings of life. Doctor Matano is a trusted African traditional healer, herbal wellness practitioner, and spiritual healer whose practice is built upon generations of knowledge preserved and honed by his ancestors.</p>
-                    <br>
-                    <p>His approach doesn't just address symptoms—it seeks to restore harmony between mind, body, and spirit through time-honored cultural practices that have nurtured communities for centuries.</p>
-                    <br>
-                    <p>At the heart of spiritual healing practice is the understanding of true healing as a sacred process of returning to wholeness. We do not "treat illnesses" but rather work to restore the natural balance that illness or distress has disrupted.</p>
-                </div>
-                <div class="about-image">
-                    <img src="./images/about.jpg" alt="Doctor Matano">
-                </div>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-history"></i>
-                    <h3>Generational Wisdom</h3>
-                    <p>My knowledge comes from an unbroken lineage of traditional healers dating back over 200 years. Each generation has added to this wisdom, refining techniques and adapting to changing times while preserving core principles.</p>
-                </div>
-                
-                <div class="about-card">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Ethical Practice</h3>
-                    <p>I practice with complete confidentiality, cultural integrity, and ethical responsibility. Your privacy and dignity are paramount in all consultations. I operate under strict traditional codes of conduct.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS SECTION ===== -->
-    <section id="testimonials">
-        <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial active">
-                    <p class="testimonial-text">"Doctor Matano helped me with a court case that seemed hopeless. Within days of his spiritual intervention, the case turned in my favor. I'm forever grateful for his powerful work."</p>
-                    <p class="testimonial-author">- James K., Nairobi</p>
-                </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">"After years of infertility struggles, Doctor Matano's traditional medicine and guidance helped me conceive. My family is now blessed with twins. His wisdom truly works!"</p>
-                    <p class="testimonial-author">- Sarah M., Mombasa</p>
-                </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">"The business boost spell worked wonders for my struggling shop. Within a week, customers started flowing in like never before. Doctor Matano's methods are truly effective."</p>
-                    <p class="testimonial-author">- Robert O., Kisumu</p>
-                </div>
-                
-                <div class="slider-controls">
-                    <button class="slider-btn" id="prevBtn">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn" id="nextBtn">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT 
+        .availability-badge {
+            display: inline-flex;
