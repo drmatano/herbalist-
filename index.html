@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Matano - Traditional Healer & Spiritual Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* ===== RESET & BASE STYLES ===== */
         * {
             margin: 0;
             padding: 0;
@@ -29,17 +27,11 @@
             background-color: #f9f7f0;
             color: var(--text-color);
             line-height: 1.6;
+            padding-top: 70px; /* Space for fixed header */
         }
         
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        html {
+            scroll-behavior: smooth;
         }
         
         .container {
@@ -47,6 +39,18 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         .header-container {
@@ -59,6 +63,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            text-decoration: none;
         }
         
         .logo-icon {
@@ -69,6 +74,7 @@
         .logo-text {
             font-size: 1.5rem;
             font-weight: 700;
+            color: white;
         }
         
         .logo-text span {
@@ -79,6 +85,7 @@
             display: flex;
             list-style: none;
             gap: 1.5rem;
+            align-items: center;
         }
         
         nav a {
@@ -101,34 +108,11 @@
             cursor: pointer;
         }
         
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img1.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-        
         .cta-button {
             display: inline-block;
             background-color: var(--secondary-color);
             color: var(--dark-color);
-            padding: 0.8rem 2rem;
-            font-size: 1.1rem;
+            padding: 0.5rem 1.5rem;
             font-weight: 600;
             text-decoration: none;
             border-radius: 5px;
@@ -139,14 +123,18 @@
         
         .cta-button:hover {
             background-color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
         
-        /* Services Section */
+        /* ===== SECTION COMMON STYLES ===== */
+        section {
+            padding: 5rem 0;
+        }
+        
         .section-title {
             text-align: center;
-            margin: 3rem 0 2rem;
+            margin-bottom: 3rem;
             color: var(--primary-color);
             font-size: 2.2rem;
             position: relative;
@@ -161,43 +149,67 @@
             margin: 10px auto;
         }
         
-        .services {
-            padding: 3rem 0;
+        /* ===== HOME/HERO SECTION ===== */
+        #home {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 0;
+            margin-top: -70px; /* Counteract header padding */
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        #services {
             background-color: white;
         }
         
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
         }
         
         .service-card {
             background-color: var(--light-color);
-            border-radius: 8px;
-            padding: 1.5rem;
+            border-radius: 10px;
+            padding: 2rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
+            text-align: center;
         }
         
         .service-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
         
         .service-card i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
         
         .service-card h3 {
             color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
         }
         
-        /* About Section */
-        .about {
-            padding: 4rem 0;
+        /* ===== ABOUT SECTION ===== */
+        #about {
             background-color: #f0ede0;
         }
         
@@ -224,9 +236,33 @@
             display: block;
         }
         
-        /* Testimonials */
-        .testimonials {
-            padding: 4rem 0;
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .about-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .about-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .about-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* ===== TESTIMONIALS SECTION ===== */
+        #testimonials {
             background-color: white;
         }
         
@@ -234,13 +270,12 @@
             max-width: 800px;
             margin: 0 auto;
             position: relative;
-            overflow: hidden;
         }
         
         .testimonial {
             background-color: var(--light-color);
-            padding: 2rem;
-            border-radius: 8px;
+            padding: 2.5rem;
+            border-radius: 10px;
             text-align: center;
             display: none;
         }
@@ -257,7 +292,8 @@
         
         .testimonial-text {
             font-style: italic;
-            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
         }
         
         .testimonial-author {
@@ -276,8 +312,8 @@
             background-color: var(--primary-color);
             color: white;
             border: none;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             cursor: pointer;
             display: flex;
@@ -291,20 +327,15 @@
             color: var(--dark-color);
         }
         
-        /* Contact Section */
-        .contact {
-            padding: 4rem 0;
+        /* ===== CONTACT SECTION ===== */
+        #contact {
             background-color: var(--primary-color);
             color: white;
             text-align: center;
         }
         
-        .contact h2 {
+        #contact .section-title {
             color: white;
-        }
-        
-        .contact h2::after {
-            background-color: var(--secondary-color);
         }
         
         .contact-info {
@@ -323,21 +354,21 @@
         }
         
         .contact-item i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--secondary-color);
         }
         
         .phone-number {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--secondary-color);
         }
         
-        /* Footer */
+        /* ===== FOOTER ===== */
         footer {
             background-color: var(--dark-color);
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
         }
         
@@ -345,17 +376,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
+            gap: 1.5rem;
         }
         
         .social-links {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
         }
         
         .social-links a {
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
         
@@ -363,7 +394,7 @@
             color: var(--secondary-color);
         }
         
-        /* Responsive Design */
+        /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -381,13 +412,13 @@
         @media (max-width: 768px) {
             nav ul {
                 display: none;
-                position: absolute;
-                top: 100%;
+                position: fixed;
+                top: 70px;
                 left: 0;
                 width: 100%;
                 background-color: var(--primary-color);
                 flex-direction: column;
-                padding: 1rem 0;
+                padding: 1.5rem 0;
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
@@ -401,21 +432,25 @@
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .hero p {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             
             .section-title {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
         }
         
         @media (max-width: 576px) {
-            .hero {
-                padding: 3rem 0;
+            #home {
+                padding: 6rem 0;
+            }
+            
+            section {
+                padding: 4rem 0;
             }
             
             .services-grid {
@@ -426,14 +461,18 @@
                 flex-direction: column;
                 gap: 2rem;
             }
+            
+            .phone-number {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="fixed-header">
+    <!-- ===== NAVIGATION HEADER ===== -->
+    <header>
         <div class="container header-container">
-            <a href="index.html" class="logo">
+            <a href="#home" class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
@@ -444,185 +483,143 @@
                 <i class="fas fa-bars"></i>
             </button>
             
-            <nav class="main-nav" id="navMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="nav-cta"><a href="contact.html" class="cta-button">Call Now</a></li>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="cta-button">Call Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- ===== HOME/HERO SECTION ===== -->
+    <section id="home">
         <div class="container">
-            <h1>Traditional Doctor Matano</h1>
-            <p>Ready to serve you with diligence and experience. With medicine from Africa and overseas, I provide solutions that work instantly within 12 hours with 100% guarantee.</p>
-            <a href="#contact" class="cta-button">Get Help Now</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">How I Can Help You</h2>
-            <div class="services-grid">
-                <!-- Service cards will be generated by JavaScript -->
+            <div class="hero">
+                <h1>Traditional Doctor Matano</h1>
+                <p>Ready to serve you with diligence and experience. With medicine from Africa and overseas, I provide solutions that work instantly within 12 hours with 100% guarantee.</p>
+                <a href="#contact" class="cta-button" style="padding: 0.8rem 2.5rem; font-size: 1.1rem;">Get Help Now</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">How I Can Help You</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Love & Relationships</h3>
+                    <p>Restore lost love, strengthen marriages, attract compatible partners, and heal emotional wounds with traditional spiritual methods.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Financial Success</h3>
+                    <p>Business growth, job promotions, debt clearance, and prosperity spells to open pathways to abundance and financial stability.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Legal Protection</h3>
+                    <p>Court case victory, protection from enemies, witchcraft reversal, and spiritual shields against negative energies and curses.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health & Wellness</h3>
+                    <p>Infertility solutions, chronic illness management, traditional herbal medicine, and spiritual healing for physical ailments.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Family Harmony</h3>
+                    <p>Resolve family conflicts, ancestral issues, domestic peace restoration, and remove negative energies from your home.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Spiritual Cleansing</h3>
+                    <p>Remove negative energy, curses, spiritual blockages, and ancestral problems with traditional cleansing rituals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
         <div class="container">
             <h2 class="section-title">About Doctor Matano</h2>
+            
             <div class="about-content">
                 <div class="about-text">
                     <p>In a world of constant noise and distraction, true healing comes from reconnecting with ancestral wisdom and the spiritual beings of life. Doctor Matano is a trusted African traditional healer, herbal wellness practitioner, and spiritual healer whose practice is built upon generations of knowledge preserved and honed by his ancestors.</p>
                     <br>
                     <p>His approach doesn't just address symptoms—it seeks to restore harmony between mind, body, and spirit through time-honored cultural practices that have nurtured communities for centuries.</p>
                     <br>
-                    <p>At the heart of spiritual healing practice is the understanding of true healing as a sacred process of returning to wholeness. We do not "treat illnesses" but rather work to restore the natural balance that illness or distress has disrupted. Our methods are conversational, collaborative, and deeply respectful—you are the expert on your own experience, and we are guides sharing wisdom passed down through time.</p>
+                    <p>At the heart of spiritual healing practice is the understanding of true healing as a sacred process of returning to wholeness. We do not "treat illnesses" but rather work to restore the natural balance that illness or distress has disrupted.</p>
                 </div>
                 <div class="about-image">
-                    <img src="img2.jpg" alt="Doctor Matano">
+                    <img src="./images/about.jpg" alt="Doctor Matano">
+                </div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Generational Wisdom</h3>
+                    <p>My knowledge comes from an unbroken lineage of traditional healers dating back over 200 years. Each generation has added to this wisdom, refining techniques and adapting to changing times while preserving core principles.</p>
+                </div>
+                
+                <div class="about-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Ethical Practice</h3>
+                    <p>I practice with complete confidentiality, cultural integrity, and ethical responsibility. Your privacy and dignity are paramount in all consultations. I operate under strict traditional codes of conduct.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials">
         <div class="container">
             <h2 class="section-title">Client Testimonials</h2>
+            
             <div class="testimonial-slider">
                 <div class="testimonial active">
                     <p class="testimonial-text">"Doctor Matano helped me with a court case that seemed hopeless. Within days of his spiritual intervention, the case turned in my favor. I'm forever grateful for his powerful work."</p>
                     <p class="testimonial-author">- James K., Nairobi</p>
                 </div>
+                
                 <div class="testimonial">
                     <p class="testimonial-text">"After years of infertility struggles, Doctor Matano's traditional medicine and guidance helped me conceive. My family is now blessed with twins. His wisdom truly works!"</p>
                     <p class="testimonial-author">- Sarah M., Mombasa</p>
                 </div>
+                
                 <div class="testimonial">
                     <p class="testimonial-text">"The business boost spell worked wonders for my struggling shop. Within a week, customers started flowing in like never before. Doctor Matano's methods are truly effective."</p>
                     <p class="testimonial-author">- Robert O., Kisumu</p>
                 </div>
+                
                 <div class="slider-controls">
-                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
         <div class="container">
             <h2 class="section-title">Contact Doctor Matano</h2>
-            <p>For immediate help with your spiritual, emotional, or physical challenges, reach out today.</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p class="phone-number">+254 799 936380</p>
-                    <p>Call or WhatsApp</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-clock"></i>
-                    <p>Available 24/7</p>
-                    <p>Instant response guaranteed</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <p>100% Confidential</p>
-                    <p>Private & secure consultations</p>
-                </div>
-            </div>
-            
-            <a href="tel:+254799936380" class="cta-button" style="margin-top: 2rem;">
-                <i class="fas fa-phone-alt"></i> Call Now for Help
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <div class="logo-text">Doctor <span>Matano</span></div>
-                </div>
-                
-                <p>Traditional Herbalist & Spiritual Healer • Honoring ancestral wisdom since 1975</p>
-                
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                </div>
-                
-                <p>&copy; 2023 Doctor Matano Traditional Healing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Testimonial slider
-        const testimonials = document.querySelectorAll('.testimonial');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentTestimonial = 0;
-        
-        function showTestimonial(index) {
-            testimonials.forEach(testimonial => {
-                testimonial.classList.remove('active');
-            });
-            
-            currentTestimonial = index;
-            if (currentTestimonial >= testimonials.length) currentTestimonial = 0;
-            if (currentTestimonial < 0) currentTestimonial = testimonials.length - 1;
-            
-            testimonials[currentTestimonial].classList.add('active');
-        }
-        
-        nextBtn.addEventListener('click', () => {
-            showTestimonial(currentTestimonial + 1);
-        });
-        
-        prevBtn.addEventListener('click', () => {
-            showTestimonial(currentTestimonial - 1);
-        });
-        
-        // Auto-rotate testimonials every 5 seconds
-        setInterval(() => {
-            showTestimonial(currentTestimonial + 1);
-        }, 5000);
-        
-        // 
+            <p style="font-size: 1.2rem; max-w
