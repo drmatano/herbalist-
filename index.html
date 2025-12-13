@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Matano - Traditional Healer & Spiritual Guide | 100% Guaranteed Results</title>
+    <meta name="description" content="Doctor Matano: Trusted traditional healer with 40+ years experience. Spiritual healing, traditional medicine, ancestral wisdom. 100% guaranteed results.">
+    <meta name="keywords" content="traditional healer, spiritual healing, African medicine, Doctor Matano, herbal medicine, love spells, court cases, infertility">
+    <meta name="author" content="Doctor Matano">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== BASE STYLES ===== */
+        :root {
+            --primary: #1a472a;
+            --gold: #d4af37;
+            --brown: #8b4513;
+            --light: #f8f5f0;
+            --dark: #2c2c2c;
+            --success: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: var(--light);
+            padding-top: 90px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--gold));
+            margin: 15px auto 30px;
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--brown);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            font-style: italic;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, #e8c64a 100%);
+            color: var(--dark);
+            padding: 14px 32px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+        }
+        
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3e 100%);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 8px;
+            border: 2px solid var(--gold);
+            padding: 3px;
+            background: white;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+        
+        .logo-name span {
+            color: var(--gold);
+        }
+        
+        .logo-tagline {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 4px;
+            font-style: italic;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+        
+        nav a:hover:after,
+        nav a.active:after {
+            width: 100%;
+        }
+        
+        nav a:hover {
+            color: var(--gold);
+        }
+        
+        .nav-cta {
+            margin-left: 10px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        /* ===== HERO SECTION ===== */
+        #hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            margin-top: -90px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-tagline {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin: 20px auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 8px;
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        #services {
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .service-features li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        /* ===== ABOUT SECTION ===== */
+        #about {
+            background: linear-gradient(135deg, #f0ede0 0%, #e8e2d0 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .experience-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .experience-years {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+        
+        .experience-text {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        /* ===== TESTIMONIALS SECTION ===== */
+        #testimonials {
+            background: var(--light);
+        }
+        
+        .testimonials-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .author-info h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .author-location {
+            color: var(--brown);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== CONTACT SECTION ===== */
+        #contact {
+            background: linear-gradient(135deg, var(--primary) 0%, #2d5a3e 100%);
+            color: white;
+        }
+        
+        #contact .section-title {
+            color: white;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--gold);
+            min-width: 40px;
+        }
+        
+        .contact-details h4 {
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .phone-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .phone-number:hover {
+            transform: scale(1.05);
+        }
+        
+        .availability {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--success);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links h4,
+        .footer-services h4 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+        }
+        
+        .footer-links li,
+        .footer-services li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a,
+        .footer-services a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover,
+        .footer-services a:hover {
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: var(--primary);
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 40px;
+                transition: left 0.3s ease;
+                gap: 2rem;
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .stats {
+                gap: 30px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .phone-number {
+                font-size: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+            }
+        }
+        
+        /* ===== WHATSAPP FLOATING BUTTON ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-text {
+            position: absolute;
+            right: 70px;
+            background: #25D366;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+        
+        .whatsapp-float:hover .whatsapp-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header>
+        <div class="container header-container">
+            <a href="#hero" class="logo">
+                <img src="logo.jpg" alt="Doctor Matano Logo" class="logo-img">
+                <div class="logo-text">
+                    <div class="logo-name">Doctor <span>Matano</span></div>
+                    <div class="logo-tagline">Traditional Healer & Spiritual Guide</div>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="tel:+254799936380" class="btn nav-cta">Call Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Ancient Wisdom, Modern Solutions</h1>
+            <p class="hero-tagline">Traditional Healing & Spiritual Guidance</p>
+            <p class="hero-description">With over 40 years of experience, Doctor Matano combines ancestral wisdom with traditional medicine to provide 100% guaranteed solutions for love, prosperity, health, and spiritual growth.</p>
+            
+            <div class="guarantee-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>100% Guaranteed Results Within 12 Hours</span>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#contact" class="btn">Get Free Consultation</a>
+                <a href="https://wa.me/254799936380" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Clients Helped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Availability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Healing Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for life's challenges using traditional African medicine and spiritual practices</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="img2.jpg" alt="Love & Relationships" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Love & Relationships</h3>
+                        <p>Restore broken relationships, attract true love, and strengthen marital bonds with powerful traditional methods.</p>
+                        <ul class="service-features">
+                            <li>Love spell casting & removal</li>
+                            <li>Marriage problem solutions</li>
+                            <li>Attract your soulmate</li>
+                        </ul>
+                        <p><strong>Results in 12-24 hours</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="img3.jpg" alt="Court Cases" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Court Cases & Legal Matters</h3>
+                        <p>Win court cases, get charges dropped, and receive favorable judgments through spiritual intervention.</p>
+                        <ul class="service-features">
+                            <li>Case dismissal spells</li>
+                            <li>Favorable judgment charms</li>
+                            <li>Legal protection</li>
+                        </ul>
+                        <p><strong>Results in 24-48 hours</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="img5.jpg" alt="Fertility Solutions" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Fertility & Family</h3>
+                        <p>Overcome infertility, ensure safe pregnancy, and protect your family with ancestral blessings.</p>
+                        <ul class="service-features">
+                            <li>Infertility solutions</li>
+                            <li>Pregnancy protection</li>
+                            <li>Family harmony</li>
+                        </ul>
+                        <p><strong>Results in 1-2 weeks</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="img6.jpg" alt="Business Growth" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-business-time"></i>
+                        </div>
+                        <h3>Business & Prosperity</h3>
+                        <p>Attract wealth, remove business obstacles, and increase prosperity through traditional means.</p>
+                        <ul class="service-features">
+                            <li>Business growth charms</li>
+                            <li>Debt clearance</li>
+                            <li>Job promotion</li>
+                        </ul>
+                        <p><strong>Results in 3-7 days</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="img7.jpg" alt="Spiritual Protection" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Spiritual Protection</h3>
+                        <p>Remove curses, evil spirits, bad luck, and negative energy affecting your life's progress.</p>
+                        <ul class="service-features">
+                            <li>Curse removal</li>
+                            <li>Evil eye protection</li>
+                            <li>Bad luck reversal</li>
+                        </ul>
+                        <p><strong>Immediate results</strong></p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="img8.jpg" alt="Traditional Medicine" class="service-img">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Traditional Medicine</h3>
+                        <p>Heal chronic illnesses, enhance vitality, and improve overall health with herbal remedies.</p>
+                        <ul class="service-features">
+                            <li>Herbal treatments</li>
+                            <li>Chronic illness healing</li>
+                            <li>Energy restoration</li>
+                        </ul>
+                        <p><strong>Varies by condition</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Doctor Matano</h2>
+            <p class="section-subtitle">A legacy of healing passed down through generations</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Journey of a Master Healer</h3>
+                    <p>Doctor Matano comes from a long lineage of traditional healers, with ancestral roots tracing back to powerful medicine men of East Africa. For over four decades, he has dedicated his life to studying and practicing the ancient arts of spiritual healing and traditional medicine.</p>
+                    <p>His unique approach combines time-honored techniques with deep spiritual insight, providing solutions where modern medicine and conventional approaches have failed. Doctor Matano believes in treating not just symptoms but addressing root causes - whether physical, emotional, or spiritual.</p>
+                    
+                    <h4 style="margin-top: 2rem; color: var(--primary);">Philosophy & Approach</h4>
+                    <p>Every healing journey begins with understanding the individual's unique situation. Doctor Matano provides personalized consultations and treatments, ensuring each client receives solutions tailored to their specific needs and circumstances.</p>
+                    
+                    <a href="#contact" class="btn" style="margin-top: 2rem;">Schedule Your Consultation</a>
+                </div>
+                
+                <div class="about-image">
+                    <img src="img9.jpg" alt="Doctor Matano">
+                    <div class="experience-badge">
+                        <div class="experience-years">40+</div>
+                        <div class="experience-text">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">Real stories of transformation and healing</p>
+            
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "After 8 years of infertility and countless hospital visits, I had lost hope. A friend recommended Doctor Matano. Within 3 weeks of following his guidance and traditional medicine, I conceived. Today I'm holding my baby girl. Thank you for this miracle!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah K.</h4>
+                            <div class="author-location">Nairobi, Kenya</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "I was facing serious criminal charges that could have put me away for 15 years. My lawyer said we had no case. Doctor Matano worked on my situation spiritually. The main witness changed testimony, evidence went missing, and the case was dismissed. I'm forever grateful."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>James M.</h4>
+                            <div class="author-location">Kampala, Uganda</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "My husband left me for a younger woman after 12 years of marriage. I was devastated. Doctor Matano helped me restore my marriage in just 2 weeks. My husband came back begging for forgiveness and has completely changed. Our relationship is now stronger than ever."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Grace W.</h4>
+                            <div class="author-location">Dar es Salaam, Tanzania</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Doctor Matano</h2>
+            <p class="section-subtitle">Begin your healing journey today - 100% confidential consultation</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-details">
+                            <h4>Call Now For Immediate Help</h4>
+                            <a href="tel:+254799936380" class="phone-number">+254 799 936 380</a>
+                            <a href="tel:+254700123456" class="phone-number">+254 700 123 456</a>
+                            <div class="availability">
+                                <i class="fas fa-clock"></i>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-details">
+                            <h4>WhatsApp Message</h4>
+                            <p>Click the WhatsApp button below for quick consultation</p>
+                            <a href="https://wa.me/254799936380" class="btn btn-whatsapp" target="_blank" style="margin-top: 10px;">
+                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p><strong>help@drmatano.com</strong></p>
+                            <p>Response within 2 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                            <p>By appointment only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="consultationForm">
+                        <input type="text" placeholder="Your Full Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="email" placeholder="Email Address">
+                        
+                        <select required>
+                            <option value="" disabled selected>Select Your Challenge</option>
+                            <option value="love">Love & Relationships</option>
+                            <option value="court">Court Cases & Legal</option>
+                            <option value="fertility">Fertility & Family</option>
+                            <option value="business">Business & Prosperity</option>
+                            <option value="protection">Spiritual Protection</option>
+                            <option value="health">Health & Medicine</option>
+                            <option value="other">Other Challenge</option>
+                        </select>
+                        
+                        <textarea placeholder="Briefly describe your situation..." rows="5"></textarea>
+                        
+                        <button type="submit" class="btn" style="width: 100%; padding: 16px; font-size: 1.1rem;">
+                            <i class="fas fa-paper-plane"></i> Send Message for Free Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="logo.jpg" alt="Doctor Matano Logo">
+                    <p>Ancient wisdom for modern challenges. Experience the power of traditional healing with guaranteed results.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="tel:+254799936380" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">
+                            <i class="fas fa-phone"></i> Emergency Call
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-heart"></i> Love & Relationships</a></li>
+                        <li><a href="#services"><i class="fas fa-gavel"></i> Court Cases</a></li>
+                        <li><a href="#services"><i class="fas fa-baby"></i> Fertility Solutions</a></li>
+                        <li><a href="#services"><i class="fas fa-business-time"></i> Business Growth</a></li>
+                        <li><a href="#services"><i class="fas fa-shield-alt"></i> Spiritual Protection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +254 799 936 380</p>
+                    <p><i class="fab fa-whatsapp"></i> +254 799 936 380</p>
+                    <p><i class="fas fa-envelope"></i> help@drmatano.com</p>
+                    <p><i class="fas fa-clock"></i> Available 24/7</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://wa.me/254799936380" class="btn btn-whatsapp" target="_blank" style="padding: 8px 15px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Doctor Matano - Traditional Healer & Spiritual Guide. All rights reserved. | Results may vary by individual</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">This website is for informational purposes. Traditional healing practices vary across cultures.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/254799936380" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat with Doctor Matano</span>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your consultation request has been sent. Doctor Matano will contact you within 2 hours.');
+            this.reset();
+        });
+        
+        // Highlight active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
