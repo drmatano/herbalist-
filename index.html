@@ -1280,5 +1280,24 @@ He honors and give thanks to the generations of traditional healers and knowledg
             });
         });
     </script>
+    <script>
+// Smooth scrolling for anchor links (e.g., #services, #about)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Stop the default jump
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Scroll smoothly, accounting for the fixed header
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+    </script>
 </body>
 </html>
