@@ -948,7 +948,7 @@ He honors and give thanks to the generations of traditional healers and knowledg
         <h3>Thank You!</h3>
         <p>Your message has been sent. Dr. Matano will contact you soon.</p>
     </div>
-</div
+</div>
     </section>
 
     <!-- ===== FOOTER ===== -->
@@ -1008,14 +1008,110 @@ He honors and give thanks to the generations of traditional healers and knowledg
         </div>
     </footer>
 
+        <!-- Your WhatsApp link (KEEP THIS) -->
     <a href="https://wa.me/254799936380?text=Hello%20Dr.%20Matano,%20I%20need%20your%20spiritual%20assistance" 
-   class="whatsapp-float" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   onclick="return report_conversion();">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-text">Chat with Doctor Matano</span>
-</a>
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       onclick="return report_conversion();">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat with Doctor Matano</span>
+    </a>
 
+    <!-- ADD THIS WHOLE SCRIPT - This fixes your mobile menu! -->
     <script>
-[...]
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            
+            // Change ☰ to ✕ when menu opens
+            const icon = this.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInside = navMenu.contains(event.target) || mobileMenuBtn.contains(event.target);
+            if (!isClickInside && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== "#" && href !== "#!" && href !== "#hero") {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Form submission
+    const contactForm = document.getElementById('consultationForm');
+    const formSuccess = document.getElementById('form-success');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                    if (typeof report_conversion === 'function') {
+                        report_conversion();
+                    }
+                } else {
+                    alert('Please try again or contact us via WhatsApp.');
+                }
+            }).catch(error => {
+                alert('Please try again or contact us via WhatsApp.');
+            });
+        });
+    }
+    </script>
+
+    <!-- FIX THE FORM ERROR - Find this line above and change it -->
+    <!-- Look for: </div  and change to: </div> -->
+
+<!-- THIS IS THE MISSING PART! -->
+</body>
+</html>
